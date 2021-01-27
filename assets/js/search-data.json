@@ -2,17 +2,6 @@
   
     
         "post0": {
-            "title": "Covid_19_project",
-            "content": "",
-            "url": "https://priyank7n.github.io/fastblogs/2021/01/27/Covid_19_Project.html",
-            "relUrl": "/2021/01/27/Covid_19_Project.html",
-            "date": " • Jan 27, 2021"
-        }
-        
-    
-  
-    
-        ,"post1": {
             "title": "Covify",
             "content": "About . This notebook Contains UI And its Functionalities that are:- . We Can upload a CT Scan Image and Our Model Covify will predict on that image wether the image uploaded is of a Covid Infected person or not. | When we Click the Classifiy button the model gives a softmax probability of the decision it made and how strongly it tries to put forward its integrity | We can then also click on the Magic Button that shows a heat map of all the activations in the image uploaded that tells us which all activations influenced the model to take certain decisions. | . Covid Prediction on CT Scan Images . when we click on CT Scan images , Our Model predicts wether it is covid or not and also a heat map showcasing its predictions. . Non-Covid Prediction on CT Scan Images . when we click on CT Scan images , Our Model predicts wether it is covid or not and also a heat map showcasing its predictions. . Heatmaps . This is a heat map of the image showcasing which activations or parts of the image led the model to predict wether the person is covid or not . Applications . Deep learning, which is a popular research area of artificial intelligence (AI), enables the creation of end-to-end models to achieve promised results using input data, without the need for manual feature extraction. . | We have used CT scan images to not sacrifice on quality but also to improve speed of data diagnosis. . | In order to combat COVID the Current need of the hour is building Medical Diagnosis Support Systems that are Fast, Reliable, Efficient, and Effective. . | Conventional Covid-19 tests that is PCR (Polymerase chain reaction) test are time consuming and also leads to much more False-Negative and False Positive predictions . | We have to send the sample of PCR  to the labs which are sometimes in faraway locations that  is far time consuming . | Sometimes When the doctors and Radiologists are not available at that time we can   generate a preliminary diagnosis  . | Application of machine learning methods for automatic diagnosis in the medical field have recently gained popularity i.e, have become far more essential in early detection  . | Fast and accurate diagnostic methods are heavily needed to combat the disease so that more and more time should be invested in Disease Control . | Note: link to link to my notebook should also work fine. . | . References . https://www.medrxiv.org/content/10.1101/2020.04.24.20078584v3 https://www.kaggle.com/plameneduardo/sarscov2-ctscan-dataset https://github.com/mr7495/COVID-CTset https://jovian.ai/priyank7n/minor-test-run .",
             "url": "https://priyank7n.github.io/fastblogs/jupyter/2020/02/23/GUI-Covify.html",
@@ -23,7 +12,7 @@
     
   
     
-        ,"post2": {
+        ,"post1": {
             "title": "An Example Markdown Post",
             "content": "Example Markdown Post . Basic setup . Jekyll requires blog post files to be named according to the following format: . YEAR-MONTH-DAY-filename.md . Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and filename is whatever file name you choose, to remind yourself what this post is about. .md is the file extension for markdown files. . The first line of the file should start with a single hash character, then a space, then your title. This is how you create a “level 1 heading” in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line ## File names above. . Basic formatting . You can use italics, bold, code font text, and create links. Here’s a footnote 1. Here’s a horizontal rule: . . Lists . Here’s a list: . item 1 | item 2 | . And a numbered list: . item 1 | item 2 | Boxes and stuff . This is a quotation . . You can include alert boxes …and… . . You can include info boxes Images . . Code . You can format text and code per usual . General preformatted text: . # Do a thing do_thing() . Python code and output: . # Prints &#39;2&#39; print(1+1) . 2 . Formatting text as shell commands: . echo &quot;hello world&quot; ./some_script.sh --option &quot;value&quot; wget https://example.com/cat_photo1.png . Formatting text as YAML: . key: value - another_key: &quot;another value&quot; . Tables . Column 1 Column 2 . A thing | Another thing | . Tweetcards . Altair 4.0 is released! https://t.co/PCyrIOTcvvTry it with: pip install -U altairThe full list of changes is at https://t.co/roXmzcsT58 ...read on for some highlights. pic.twitter.com/vWJ0ZveKbZ . &mdash; Jake VanderPlas (@jakevdp) December 11, 2019 Footnotes . This is the footnote. &#8617; . |",
             "url": "https://priyank7n.github.io/fastblogs/markdown/2020/01/14/test-markdown-post.html",
