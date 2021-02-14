@@ -11,7 +11,7 @@ I Love to experiment with stuff and Beleive in Project based learning rather tha
 
 You can reach me out on  [Twitter](https://twitter.com/PriyanK_7n) or on linkedin!
 
-![](images/unsplash.jpg)
+![]({{site.baseurl}}/images/unsplash.jpg "Night Sky Stars")
 
 
 ### Thank you 
