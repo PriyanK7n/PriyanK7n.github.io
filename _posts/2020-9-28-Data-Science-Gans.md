@@ -15,17 +15,16 @@ search_exclude: true
 
 |Python|Pytorch|
 |-|-|
-|Python is a popular platform used for research and development of production systemsIt is a vast language with number of modules, packages and libraries that provides multiple ways of achieving a task. Python and its libraries like NumPy, SciPy, Scikit-Learn, Matplotlib are used in data science and data analysis Python is a popular platform used for research and development of production systems|PyTorch is an open source machine learning library used primarily for applications such as computer vision and natural language processing. 
-PyTorch is a strong player in the field of deep learning and artificial intelligence, and it can be considered primarily as a research-first library that heavily leverages Gpu Computation|
+|Python is a popular platform used for research and development of production systemsIt is a vast language with number of modules, packages and libraries that provides multiple ways of achieving a task. Python and its libraries like NumPy, SciPy, Scikit-Learn, Matplotlib are used in data science and data analysis Python is a popular platform used for research and development of production systems|PyTorch is an open source machine learning library used primarily for applications such as computer vision and natural language processing.PyTorch is a strong player in the field of deep learning and artificial intelligence, and it can be considered primarily as a research-first library that heavily leverages Gpu Computation|
 
-# SECTION OF Data Science
+# Section of  Data Science
 
 
 ![](../images/grid1.png)
 
 - Data analysis is a process of inspecting, cleansing, transforming and modeling data with goal of discovering useful information, informing conclusions and supporting decision-making
  
-- Statistics is used to process complex problems in the real     world so that Data Scientists and Analysts can look for meaningful trends and changes in Data.
+- Statistics is used to process complex problems in the real     world so that Data Scientists and Analysts can look for meaningful trends and   changes in Data.
     
 - Software Development is the process of conceiving, specifying, designing, documenting,texting and bugs fixing 
 
@@ -44,11 +43,12 @@ PyTorch is a strong player in the field of deep learning and artificial intelli
 
 # Machine Learning Types:
 
-![](../images/t1.png)
+![](../images/s1.png)
 
 # Deep Learning:
 
-![](../images/t4.png)
+![]({{ site.baseurl }}/images/t4.png)
+
 
 - Deep learning is part of a broader family of machine learning methods based on artificial neural networks with representation learning. 
 - Deep learning architectures such as deep neural networks, deep belief networks, recurrent neural networks and convolutional neural networks have been applied to various fields. 
@@ -58,7 +58,7 @@ PyTorch is a strong player in the field of deep learning and artificial intelli
 CONVULATIONAL NEURAL NETWORK
 
 
-![](../images/c1.png)
+![]({{ site.baseurl }}/images/c1.png)
 Convolution networks are simply neural networks that use convolution in place of general matrix multiplication in at least one of their layers. 
 - LAYERS:- 
  Convolutional layer -Pooling layer 
@@ -79,7 +79,8 @@ A generative adversarial network (GAN) is a combination of a generator and a Dis
 
 Steps Involved in a GAN :-
 
-![](../images/s1.png)
+![]({{ site.baseurl }}/images/s1.png)
+
 
 
 ## Generator
@@ -109,10 +110,6 @@ Steps Involved in a GAN :-
 
 This is how the output of a well trained Generator network over time  looks like that produces almost real like  images that are detected by the discriminater as Real,  who heavily penalizes generater on  producing fake images.
 
-<video width="640" height="360" controls autoplay loop muted playsinline>
-  <source src="/images/anime.avi" type="video/mp4">
-Your browser does not support the video tag.
-</video> 
 
 
 
