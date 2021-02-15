@@ -103,6 +103,9 @@ Steps Involved in a GAN :-
 
 # Outcome of the project?
 
+![4dud7y](https://user-images.githubusercontent.com/44031169/92255060-6c500780-eeef-11ea-8ee9-4f8ef18e7722.gif)
+
+
 
 This is how the output of a well trained Generator network over time  looks like that produces almost real like  images that are detected by the discriminater as Real,  who heavily penalizes generater on  producing fake images.
 
