@@ -98,6 +98,9 @@ Steps Involved in a GAN :-
 
 ## DISCRIMINATOR
 
+
+![]({{ site.baseurl }}/images/dloss.png "loss function for Discriminator")
+
 > The discriminator in a GAN is simply a classifier. It tries to distinguish real data from the data created by the generator. It could use any network architecture appropriate to the type of data it's classifying .
   Discriminator training:
 * The discriminator classifies both real data and fake data from the generator.
