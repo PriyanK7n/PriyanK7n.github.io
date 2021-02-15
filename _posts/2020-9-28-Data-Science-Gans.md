@@ -4,7 +4,7 @@ description: "Hands on with Python and Pytorch"
 layout: post
 toc: false
 comments: true
-categories: [GANS's]
+categories: [GANS's,Pytorch]
 image: images/gan_pf.png
 hide: false
 search_exclude: true
@@ -20,7 +20,8 @@ search_exclude: true
 # Section of  Data Science
 
 
-![](../images/grid1.png)
+
+![]({{ site.baseurl }}/images/grid1.png)
 
 - Data analysis is a process of inspecting, cleansing, transforming and modeling data with goal of discovering useful information, informing conclusions and supporting decision-making
  
@@ -33,7 +34,8 @@ search_exclude: true
 
 # Why and When to make Machine Learn?
 
-![](../images/m2.png)
+![]({{ site.baseurl }}/images/m2.png)
+
 - `Lack of human expertise` - The very first scenario in which we want a machine to learn and take data-driven decisions, can be the domain where there is a lack of human expertise. The examples can be navigations in unknown territories or spatial planets. 
 
 - `Dynamic scenarios` - There are some scenarios which are dynamic in nature i.e. they keep changing over time. In case of these scenarios and behaviours, we want a machine to learn and take data-driven decisions. Some of the examples can be network connectivity and availability of infrastructure in an organization. 
@@ -43,7 +45,8 @@ search_exclude: true
 
 # Machine Learning Types:
 
-![](../images/s1.png)
+
+![]({{ site.baseurl }}/images/s1.png)
 
 # Deep Learning:
 
