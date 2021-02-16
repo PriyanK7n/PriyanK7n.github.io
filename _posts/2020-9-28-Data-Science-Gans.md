@@ -8,6 +8,7 @@ categories: [GANS's,Pytorch]
 image: images/gan_pf.png
 hide: false
 search_exclude: true
+sticky_rank: 4
 
 ---
 
