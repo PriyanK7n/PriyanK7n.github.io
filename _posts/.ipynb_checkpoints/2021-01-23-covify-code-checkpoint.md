@@ -6,7 +6,7 @@ toc: true
 badges: true
 comments: true
 author: Priyank
-categories: [jupyter,Deep Learning]
+categories: [fastai]
 images: images/hit2.jpg 
 nb_path: _notebooks/2021-01-23-covify-code.ipynb
 layout: notebook
