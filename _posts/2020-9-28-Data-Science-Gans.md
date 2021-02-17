@@ -47,7 +47,7 @@ sticky_rank: 4
 # Machine Learning Types:
 
 
-![]({{ site.baseurl }}/images/s1.png)
+![]({{ site.baseurl }}/images/t1.png)
 
 # Deep Learning:
 
