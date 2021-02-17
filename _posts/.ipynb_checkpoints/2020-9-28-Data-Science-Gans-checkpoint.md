@@ -4,7 +4,7 @@ description: "Hands on with Python and Pytorch"
 layout: post
 toc: false
 comments: true
-categories: [GANS's,Pytorch]
+categories: [Pytorch]
 image: images/gan_pf.png
 hide: false
 search_exclude: true
@@ -47,7 +47,7 @@ sticky_rank: 4
 # Machine Learning Types:
 
 
-![]({{ site.baseurl }}/images/s1.png)
+![]({{ site.baseurl }}/images/t1.png)
 
 # Deep Learning:
 
