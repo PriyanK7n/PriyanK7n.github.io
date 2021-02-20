@@ -17,14 +17,13 @@ search_exclude: true
 **GPT-3 stands for Generative Pre-trained Transformer 3.**
 It is a gargantuan artificial Neural Network (NN) around the size of a mouse brain, trained on essentially the whole internet and millions of and GPT-3 is a language model, which means that, using sequence transduction, it can predict the likelihood of an output sequence given an input sequence. This can be used, for instance to predict which word makes the most sense given a text sequence.
 
-
-![]({{ site.baseurl }}/images/media/image1.gif")
+![]({{ site.baseurl }}/images/media/image1.gif)
 
 
 # Facts about GPT-3
 
 
-![]({{ site.baseurl }}/images/media/image2.png")
+![]({{ site.baseurl }}/images/media/image2.png)
 
 
 -   Trained on 300 Billion words has been trained using also huge datasets, including the [Common Crawl](https://commoncrawl.org/) dataset and the [English-language Wikipedia](https://en.wikipedia.org/wiki/Main_Page) ([spanning some 6 million articles, and making up only 0.6 percent of its training data](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential)),
@@ -49,14 +48,13 @@ It is a gargantuan artificial Neural Network (NN) around the size of a mouse bra
 # GPT-3 Training phase
 
 
-![]({{ site.baseurl }}/images/media/image3.png")
-<img src="/images/media/image3.gif" style="width:6.03542in;height:3.39097in" />
+![]({{ site.baseurl }}/images/media/image3.png)
 
 
 The dataset of 300 billion tokens of text is used to generate training examples for the model. For example, these are three training examples generated from the one sentence at the top.
 
 
-![]({{ site.baseurl }}/images/media/image4.gif")
+![]({{ site.baseurl }}/images/media/image4.gif)
 
 
 The model is presented with an example. We only show it the features and ask it to predict the next word.
@@ -67,7 +65,7 @@ The model’s prediction will be wrong. We calculate the error in its prediction
 # GPT-3 Working & Architecture
 
 
-![]({{ site.baseurl }}/images/media/image5.gif")
+![]({{ site.baseurl }}/images/media/image5.gif)
 
 
 Let’s follow the purple track. How does a system process the word “robotics” and produce “A”?
@@ -81,7 +79,9 @@ High-level steps:
 3.  Convert resulting vector to word
 
 
-<img src="/images/media/image6.gif" style="width:4.70139in;height:2.66667in" />
+![]({{ site.baseurl }}/images/media/image6.gif)
+
+
 
 
 The important calculations of the GPT3 occur inside its stack of 96 transformer decoder layers. This is the “depth” in “deep learning”. Each of these layers has its own 1.8B parameter to make its calculations. That is where the “magic” happens.
@@ -163,7 +163,3 @@ High-level steps:
 -   More data-efficient training: humans 1000x more efficient
 
 -   Lifelong learning: online, fine-tuning
-
-<img src="/images/media/image1.gif" style="width:6.26789in;height:3.31102in" />
-<img src="/images/media/image2.png" style="width:6.26806in;height:2.02014in" /> 
-
