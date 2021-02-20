@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://priyank7n.github.io/fastblogs/markdown/2020/01/14/test-markdown-post.html</loc>
-<lastmod>2020-01-14T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://priyank7n.github.io/fastblogs/pytorch/2020/09/28/Data-Science-Gans.html</loc>
 <lastmod>2020-09-28T00:00:00-05:00</lastmod>
 </url>
@@ -17,15 +13,11 @@
 <lastmod>2021-01-23T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://priyank7n.github.io/fastblogs/nlp/reformer/transformers/language-modelling/2021/02/16/reformer-reproducibility-challenge.html</loc>
-<lastmod>2021-02-16T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://priyank7n.github.io/fastblogs/nlp/reformer/transformers/language-modelling/2021/02/19/reformer-reproducibility-challenge.html</loc>
 <lastmod>2021-02-19T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://priyank7n.github.io/fastblogs/2021/02/20/GPT-3.html</loc>
+<loc>https://priyank7n.github.io/fastblogs/pytorch/2021/02/20/GPT-3.html</loc>
 <lastmod>2021-02-20T00:00:00-06:00</lastmod>
 </url>
 <url>
