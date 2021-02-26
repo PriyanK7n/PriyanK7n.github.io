@@ -22,11 +22,11 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="About">About<a class="anchor-link" href="#About"> </a></h1><p>This notebook Contains UI And its Functionalities that are:-</p>
+<h1 id="About">About<a class="anchor-link" href="#About"> </a></h1><p>GUI and its Functionalities are:</p>
 <ul>
-<li>We Can upload a <code>CT Scan Image</code> and Our Model Covify will <code>predict</code> on that image wether  the image uploaded is of a Covid Infected person or not.</li>
-<li>When we Click the <code>Classifiy button</code> the model gives a softmax probability of the decision it made and how strongly it tries to put forward its integrity </li>
-<li>We can then also click on the <code>Magic Button</code> that shows a <code>heat map</code> of all the activations in the image uploaded that tells us which all activations influenced the model to take certain decisions.</li>
+<li>We can upload a <code>CT Scan Image</code> and our model Covify will <code>predict</code> wether  the image uploaded is of a Covid Infected person or not.</li>
+<li>When we click the <code>Classify button</code> the model gives a softmax probability of the decision it made and how strongly it tries to put forward its integrity.</li>
+<li>When we click on the <code>Magic Button</code> it shows a <code>heat map</code> of all the activations in the image that  influenced the model to take certain decisions.</li>
 </ul>
 
 </div>
@@ -43,7 +43,7 @@ layout: notebook
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Non-Covid-Prediction-on-CT-Scan-Images">Non-Covid Prediction on CT Scan Images<a class="anchor-link" href="#Non-Covid-Prediction-on-CT-Scan-Images"> </a></h1><p><img src="/fastblogs/images/copied_from_nb/my_icons/Covi2.png" alt=""></p>
-<p>when we click on CT Scan images , Our Model predicts wether it is covid or not and also a heat map showcasing its predictions.</p>
+<p>When we click on CT Scan images, Our Model predicts wether it is covid or not and also showcases a heat map.</p>
 
 </div>
 </div>
@@ -51,8 +51,8 @@ layout: notebook
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Heatmaps">Heatmaps<a class="anchor-link" href="#Heatmaps"> </a></h1><p><img src="/fastblogs/images/copied_from_nb/my_icons/hmap.png" alt=""></p>
-<p><code>This is a heat map of the image showcasing which activations or parts of the image led the model
-to predict wether the person is covid or not</code></p>
+<p><code>This is a heat map for the image showcasing which activations or parts of the image led the model
+to predict certain decisions on wether the person is covid or not.</code></p>
 
 </div>
 </div>
@@ -60,33 +60,18 @@ to predict wether the person is covid or not</code></p>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Applications">Applications<a class="anchor-link" href="#Applications"> </a></h1><ul>
-<li><blockquote><p>Deep learning, which is a popular research area of artificial intelligence (AI), enables the creation of end-to-end models to achieve promised results using input data, without the need for manual feature extraction.</p>
-</blockquote>
+<li><p>Deep learning, which is a popular research area of artificial intelligence (AI), enables the creation of end-to-end models to achieve promised results using input data, without the need for manual feature extraction.</p>
 </li>
-<li><blockquote><p>We have used CT scan images to not sacrifice on quality but also to improve speed of data diagnosis.</p>
-</blockquote>
+<li><p>We have used CT scan images to not sacrifice on quality but also to improve speed of data diagnosis.</p>
 </li>
-<li><blockquote><p>In order to combat COVID the Current need of the hour is building Medical Diagnosis Support Systems that are Fast, Reliable, Efficient, and Effective.</p>
-</blockquote>
+<li><p>In order to combat COVID the Current need of the hour is building Medical Diagnosis Support Systems that are Fast, Reliable, Efficient, and Effective.</p>
 </li>
-<li><blockquote><p>Conventional Covid-19 tests that is PCR (Polymerase chain reaction) test are time consuming and also leads to much more False-Negative and False Positive predictions</p>
-</blockquote>
+<li><p>Conventional Covid-19 tests that is PCR (Polymerase chain reaction) test are time consuming and also leads to much more False-Negative and False Positive predictions</p>
 </li>
-<li><blockquote><p>We have to send the sample of PCR  to the labs which are sometimes in faraway locations that  is far time consuming</p>
-</blockquote>
-</li>
-<li><blockquote><p>Sometimes When the doctors and Radiologists are not available at that time we can   generate a preliminary diagnosis </p>
-</blockquote>
-</li>
-<li><blockquote><p>Application of machine learning methods for automatic diagnosis in the medical field have recently gained popularity i.e, have become far more essential in early detection </p>
-</blockquote>
-</li>
-<li><blockquote><p>Fast and accurate diagnostic methods are heavily needed to combat the disease so that more and more time should be invested in Disease Control</p>
-</blockquote>
-</li>
-<li><blockquote><p>Note: link to <a href="https://jovian.ai/priyank7n/minor-test-run">link to my notebook</a> should also work fine.</p>
-</blockquote>
-</li>
+<li>We have to send the sample of PCR  to the labs which are sometimes in faraway locations that  is far time consuming</li>
+<li>Sometimes When the doctors and Radiologists are not available at that time we can   generate a preliminary diagnosis </li>
+<li>Application of machine learning methods for automatic diagnosis in the medical field have recently gained popularity i.e, have become far more essential in early detection </li>
+<li>Fast and accurate diagnostic methods are heavily needed to combat the disease so that more and more time should be invested in Disease Control</li>
 </ul>
 
 </div>
@@ -96,8 +81,7 @@ to predict wether the person is covid or not</code></p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="References">References<a class="anchor-link" href="#References"> </a></h1>
 <pre><code>https://www.medrxiv.org/content/10.1101/2020.04.24.20078584v3
-https://www.kaggle.com/plameneduardo/sarscov2-ctscan-dataset
-https://github.com/mr7495/COVID-CTset</code></pre>
+https://www.kaggle.com/plameneduardo/sarscov2-ctscan-dataset</code></pre>
 
 </div>
 </div>
