@@ -5,10 +5,7 @@ title: "COVID-19 Infection Detection Using Deep Learning"
 toc: true
 badges: true
 comments: true
-author: Priyank
-categories: [fastai]
 image: images/articles/virus19.png
-hide: false
 nb_path: _notebooks/2021-01-23-covify-code.ipynb
 layout: notebook
 ---
