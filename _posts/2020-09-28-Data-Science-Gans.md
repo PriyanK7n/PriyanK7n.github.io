@@ -2,7 +2,7 @@
 title: "Data Science & Gans"
 description: "Hands on with Python and Pytorch"
 layout: post
-toc: true
+toc: false
 comments: true
 categories: [Pytorch]
 image: images/gan_pf.png
