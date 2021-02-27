@@ -1,8 +1,8 @@
 ---
-title: "DATA Science & Gans"
+title: "Data Science & Gans"
 description: "Hands on with Python and Pytorch"
 layout: post
-toc: false
+toc: true
 comments: true
 categories: [Pytorch]
 image: images/gan_pf.png
@@ -23,13 +23,13 @@ search_exclude: true
 
 ![]({{ site.baseurl }}/images/grid1.png)
 
-- Data analysis is a process of inspecting, cleansing, transforming and modeling data with goal of discovering useful information, informing conclusions and supporting decision-making
+- Data analysis is a process of inspecting, cleansing, transforming and modeling data with goal of discovering useful information, informing conclusions and supporting decision-making.
  
-- Statistics is used to process complex problems in the real     world so that Data Scientists and Analysts can look for meaningful trends and   changes in Data.
+- Statistics is used to process complex problems in the real world so that Data Scientists and Analysts can look for meaningful trends and   changes in Data.
     
-- Software Development is the process of conceiving, specifying, designing, documenting,texting and bugs fixing 
+- Software Development is the process of conceiving, specifying, designing, documenting,texting and bugs fixing.
 
-- Implementation of required data science algos using programming languages like Python and deep learning using  Pytorch
+- Implementation of required data science algos using programming languages like Python and deep learning using  Pytorch.
 
 
 # Why and When to make Machine Learn?
@@ -89,11 +89,11 @@ Steps Involved in a GAN :-
 ## Generator
 >  The generator part of a GAN learns to create fake data by incorporating feedback from the discriminator. It learns to make the discriminator classify its output as real.
 - Generator training requires tighter integration between the generator and the discriminator than discriminator training requires. The portion of the `GAN that trains the generator includes`:
-- random input
-- generator network, which transforms the random input into a data instance
-- discriminator network, which classifies the generated data
-- discriminator output
-- generator loss, which penalizes the generator for failing to fool the discriminator
+- random input.
+- generator network, which transforms the random input into a data instance.
+- discriminator network, which classifies the generated data.
+- discriminator output.
+- generator loss, which penalizes the generator for failing to fool the discriminator.
 
 
 ## DISCRIMINATOR
@@ -101,7 +101,7 @@ Steps Involved in a GAN :-
 
 ![]({{ site.baseurl }}/images/dloss.png "loss function for Discriminator")
 
-> The discriminator in a GAN is simply a classifier. It tries to distinguish real data from the data created by the generator. It could use any network architecture appropriate to the type of data it's classifying .
+> The discriminator in a GAN is simply a classifier.It tries to distinguish real data from the data created by the generator. It could use any network architecture appropriate to the type of data it's classifying.
   Discriminator training:
 * The discriminator classifies both real data and fake data from the generator.
 * The discriminator loss penalizes the discriminator for misclassifying a real instance as fake or a fake instance as real.
@@ -114,7 +114,7 @@ Steps Involved in a GAN :-
 
 
 
-This is how the output of a well trained Generator network over time  looks like that produces almost real like  images that are detected by the discriminater as Real,  who heavily penalizes generater on  producing fake images.
+**This is how the output of a well trained Generator network over time  looks like that produces almost real like  images that are detected by the discriminater as Real,  who heavily penalizes generater on  producing fake images.**
 
 
 
