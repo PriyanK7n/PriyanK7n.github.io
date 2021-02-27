@@ -4,16 +4,11 @@ title: About Me
 permalink: /about/
 ---
 
-Hey Fella My name is Priyank Negi. I am learning and writing  about My interests that is AI , I m an AI and Deep Learning Enthusiast who is fascinated with the world of AI and love to explore new stuff and research that will  an impact in real world scenarios followed with responsible use of AI Systems and Data Ethics is Key in building great AI systems. I am always curious and awed by the self driving software of Tesla and Comma AI producing Cars that can tackle almost every situation.
+Hey Fella👋 My Name is **Priyank Negi**, I am learning and explore new stuff and writing on my interests on topics where AI Skills could be leveraged and Entrepeunership could be created.
 
-I beleive in Doing Stuff instead of the conventional approach of learning everything but actually doin nothing!
-I Love to experiment with stuff and Beleive in Project based learning rather than current education system only so i am not a Computer major  myself currently pursuing BTech in Electronics & Comm  so by following these amazing Courses curated by fast ai team Jeremy howard and syllvian gugger that made DL so easy to actually  build stuff with ideas , so I highly recommend checking out these courses as they are excellent to get started and advance in the Feild of AI  [fast.ai's](https://www.fast.ai/) 
+**I beleive in learning by doing Stuff instead of the conventional approach of learning everything but actually doing Nothing!**
+Lots of Experimentation and Project based learning is what i go by , being from a non  Computer major myself currently pursuing BTech in Electronics & Comm So by following these amazing Courses curated by fast ai team Jeremy howard and syllvian gugger made DL seem so easy to actually build stuff on top of our ideas ,so I highly recommend checking out these courses as they are excellent to get started and advance in the Field of AI [fast.ai's](https://www.fast.ai/) 
 
-You can reach me out on  [Twitter](https://twitter.com/PriyanK_7n) or on linkedin!
+**Thank you!! and u can reach me out on  [Twitter](https://twitter.com/PriyanK_7n) or on [linkedin](https://www.linkedin.com/in/priyank-negi-707019195)**
 
 ![]({{site.baseurl}}/images/unsplash.jpg "Night Sky Stars")
-
-
-### Thank you 
-
-This site is built with [fastpages](https://github.com/fastai/fastpages), An easy to use blogging platform with extra features for Jupyter Notebooks.
