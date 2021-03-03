@@ -11,20 +11,6 @@
 
 Requires the most recent version of `fastai`, installation instructions can be viewed at [fastai](https://github.com/fastai/fastai)
 
-Also requires installing `pydicom`
-
-- `pip install pydicom`
-
-and `scikit-image`
-
-- `pip install scikit-image`
-
-and `kornia`
-
-- `pip install kornia===0.2.0`
-
-(there is a current incompatability with the lastest version of `kornia`.  Installing version `0.2.0` solves this issue
-
 
 ### Using with Google Colab:
 
