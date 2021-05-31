@@ -14,7 +14,7 @@ github_repo: "fastblogs"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
-url: "http://priyank7n.me"
+url: "https://priyank7n.me"
 # the base hostname & protocol for your site, e.g. http://example.com
 
 ###########################################################
