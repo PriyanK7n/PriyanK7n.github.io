@@ -4,7 +4,6 @@ description: "Hands on with Python and Pytorch"
 layout: post
 toc: false
 comments: true
-categories: [Pytorch]
 image: images/gan_pf.png
 hide: false
 search_exclude: true
