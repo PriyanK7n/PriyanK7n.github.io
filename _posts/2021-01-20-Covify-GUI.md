@@ -34,7 +34,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Covid-Prediction-on-CT-Scan-Images">Covid Prediction on CT Scan Images<a class="anchor-link" href="#Covid-Prediction-on-CT-Scan-Images"> </a></h1><p><img src="/fastblogs/images/copied_from_nb/my_icons/Covi1.png" alt=""></p>
+<h1 id="Covid-Prediction-on-CT-Scan-Images">Covid Prediction on CT Scan Images<a class="anchor-link" href="#Covid-Prediction-on-CT-Scan-Images"> </a></h1><p><img src="/images/copied_from_nb/my_icons/Covi1.png" alt=""></p>
 <p>when we click on CT Scan images , Our Model predicts wether it is covid or not and also a heat map showcasing its predictions.</p>
 
 </div>
@@ -42,7 +42,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Non-Covid-Prediction-on-CT-Scan-Images">Non-Covid Prediction on CT Scan Images<a class="anchor-link" href="#Non-Covid-Prediction-on-CT-Scan-Images"> </a></h1><p><img src="/fastblogs/images/copied_from_nb/my_icons/Covi2.png" alt=""></p>
+<h1 id="Non-Covid-Prediction-on-CT-Scan-Images">Non-Covid Prediction on CT Scan Images<a class="anchor-link" href="#Non-Covid-Prediction-on-CT-Scan-Images"> </a></h1><p><img src="/images/copied_from_nb/my_icons/Covi2.png" alt=""></p>
 <p>When we click on CT Scan images, Our Model predicts wether it is covid or not and also showcases a heat map.</p>
 
 </div>
@@ -50,7 +50,7 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Heatmaps">Heatmaps<a class="anchor-link" href="#Heatmaps"> </a></h1><p><img src="/fastblogs/images/copied_from_nb/my_icons/hmap.png" alt=""></p>
+<h1 id="Heatmaps">Heatmaps<a class="anchor-link" href="#Heatmaps"> </a></h1><p><img src="/images/copied_from_nb/my_icons/hmap.png" alt=""></p>
 <p><code>This is a heat map for the image showcasing which activations or parts of the image led the model
 to predict certain decisions on wether the person is covid or not.</code></p>
 
