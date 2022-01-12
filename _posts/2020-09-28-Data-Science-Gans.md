@@ -14,7 +14,7 @@ search_exclude: true
 
 |Python|Pytorch|
 |-|-|
-|Python is a popular platform used for research and development of production systemsIt is a vast language with number of modules, packages and libraries that provides multiple ways of achieving a task. Python and its libraries like NumPy, SciPy, Scikit-Learn, Matplotlib are used in data science and data analysis Python is a popular platform used for research and development of production systems|PyTorch is an open source machine learning library used primarily for applications such as computer vision and natural language processing.PyTorch is a strong player in the field of deep learning and artificial intelligence, and it can be considered primarily as a research-first library that heavily leverages Gpu Computation|
+|Python is a popular platform used for the research and development of production systems is a vast language with several modules, packages, and libraries that provides multiple ways of achieving a task. Python and its libraries like NumPy, SciPy, Scikit-Learn, Matplotlib are used in data science and data analysis. Python is a popular platform used for research and development of production systems|PyTorch is an open-source machine learning library used primarily for computer vision and natural language processing applications.PyTorch is a strong player in the field of deep learning and artificial intelligence, and it can be considered primarily as a research-first library that heavily leverages Gpu Computation
 
 # Section of  Data Science
 
@@ -22,13 +22,13 @@ search_exclude: true
 
 ![]({{ site.baseurl }}/images/grid1.png)
 
-- Data analysis is a process of inspecting, cleansing, transforming and modeling data with goal of discovering useful information, informing conclusions and supporting decision-making.
+- Data analysis is a process of inspecting, cleansing, transforming and modeling data to discover useful information, informing conclusions and supporting decision-making.
  
 - Statistics is used to process complex problems in the real world so that Data Scientists and Analysts can look for meaningful trends and   changes in Data.
     
 - Software Development is the process of conceiving, specifying, designing, documenting,texting and bugs fixing.
 
-- Implementation of required data science algos using programming languages like Python and deep learning using  Pytorch.
+- We Implemented required data science algos using Python and deep learning using  Pytorch.
 
 
 # Why and When to make Machine Learn?
