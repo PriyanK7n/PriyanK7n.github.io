@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>MediBot: The Conversational AI Healthcare Chatbot | Priyank AI Blogs</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="MediBot: The Conversational AI Healthcare Chatbot" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Omdena’s Hyderbad Local Chapter Collaboration with 40 members from across the globe to successfully complete project for Hyderabad Local Chapter India." />
+<meta property="og:description" content="Omdena’s Hyderbad Local Chapter Collaboration with 40 members from across the globe to successfully complete project for Hyderabad Local Chapter India." />
+<link rel="canonical" href="https://priyank7n.me/nlp/dashboard/sentiment%20analysis/healthcare/chatbot/medibot/omdena/2022/06/09/Medi-Bot.html" />
+<meta property="og:url" content="https://priyank7n.me/nlp/dashboard/sentiment%20analysis/healthcare/chatbot/medibot/omdena/2022/06/09/Medi-Bot.html" />
+<meta property="og:site_name" content="Priyank AI Blogs" />
+<meta property="og:image" content="https://priyank7n.me/images/Omdena.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-06-09T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://priyank7n.me/nlp/dashboard/sentiment%20analysis/healthcare/chatbot/medibot/omdena/2022/06/09/Medi-Bot.html","@type":"BlogPosting","headline":"MediBot: The Conversational AI Healthcare Chatbot","dateModified":"2022-06-09T00:00:00-05:00","datePublished":"2022-06-09T00:00:00-05:00","image":"https://priyank7n.me/images/Omdena.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://priyank7n.me/nlp/dashboard/sentiment%20analysis/healthcare/chatbot/medibot/omdena/2022/06/09/Medi-Bot.html"},"description":"Omdena’s Hyderbad Local Chapter Collaboration with 40 members from across the globe to successfully complete project for Hyderabad Local Chapter India.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://priyank7n.me/feed.xml" title="Priyank AI Blogs" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Priyank AI Blogs</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/search/">Search</a><a class="page-link" href="/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">MediBot: The Conversational AI Healthcare Chatbot</h1><p class="page-description">Omdena's Hyderbad Local Chapter Collaboration with 40 members from across the globe to successfully complete project for Hyderabad Local Chapter India.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-06-09T00:00:00-05:00" itemprop="datePublished">
+        Jun 9, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      13 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/categories/#nlp">nlp</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#dashboard">dashboard</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#sentiment analysis">sentiment analysis</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#healthcare">healthcare</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#chatbot">chatbot</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#Medibot">Medibot</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#Omdena">Omdena</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#why-do-we-need-a-chatbot-in-healthcare">Why do we need a Chatbot in Healthcare?</a></li>
+<li class="toc-entry toc-h2"><a href="#so-how-do-we-proceed">So How Do We Proceed?</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#project-pipeline">Project Pipeline:</a></li>
+<li class="toc-entry toc-h3"><a href="#data-collection-and-preprocessing">Data Collection and Preprocessing</a></li>
+<li class="toc-entry toc-h3"><a href="#nlp-sentiment-analysis">NLP SENTIMENT ANALYSIS:</a></li>
+<li class="toc-entry toc-h3"><a href="#data-visualization-and-dashboarding">Data visualization and Dashboarding:</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#chatbot-modelling-rasa-framework">Chatbot Modelling Rasa FrameWork:</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#now-how-does-rasa-work">Now, how does Rasa work?</a></li>
+<li class="toc-entry toc-h3"><a href="#deployment">Deployment:</a></li>
+<li class="toc-entry toc-h3"><a href="#glimpse-of-the-working-medibot---an-ai-chabot-at-your-disposal-to-answer-your-key-medical-questions-quicker">Glimpse of the Working MediBot - “An AI chabot at your disposal to answer your key medical questions Quicker!”</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#conclusion">Conclusion:</a></li>
+<li class="toc-entry toc-h2"><a href="#future-scope">Future Scope:</a></li>
+<li class="toc-entry toc-h2"><a href="#production-roadmap">Production Roadmap</a></li>
+<li class="toc-entry toc-h2"><a href="#business-scope-and-business-model">Business Scope and Business Model</a></li>
+<li class="toc-entry toc-h2"><a href="#members-involved-in-the-project">Members Involved in the Project:</a></li>
+<li class="toc-entry toc-h2"><a href="#references">References:</a></li>
+</ul><h2 id="why-do-we-need-a-chatbot-in-healthcare">
+<a class="anchor" href="#why-do-we-need-a-chatbot-in-healthcare" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Why do we need a Chatbot in Healthcare?</strong>
+</h2>
+
+<p><strong>Patients POV</strong>:</p>
+
+<ul>
+  <li>
+    <p>Too many unanswered queries due to epidemics surges such as Covid etc, unavailability of medical staff and increased traffic in hospital.</p>
+  </li>
+  <li>
+    <p>Heightened Anxiety and Nervousness in patients due to long waiting times, expectation of results leading to patients becoming paranoid .</p>
+  </li>
+</ul>
+
+<p><strong>Medical staff’s POV</strong>:</p>
+
+<ul>
+  <li>
+    <p>Prioritization of patients on the basis of medical emergencies. Eg: The Doctor gives more attention to patients having medical emergencies and poor attention to other patients which lie in the low priority list.</p>
+  </li>
+  <li>
+    <p>Repeated Generic queries by patients leads to duplication of effort.</p>
+  </li>
+  <li>
+    <p>Over occupied medical staff.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>This project focuses on solving this issue by creating solutions in multiple forefronts as below:</p>
+</blockquote>
+
+<ol>
+  <li>
+    <p>Creating a chatbot to help users get answers at their fingertips</p>
+  </li>
+  <li>
+    <p>Creating a dashboard for users to visualize insights on a particular disease</p>
+  </li>
+  <li>
+    <p>Performing sentiment analysis on the data gathered from responses from patients to visualize the emotions into positive, negative and neutral categories and improve the chatbot experience based on the results.</p>
+  </li>
+</ol>
+
+<p><img src="/images/media-2/Beneficiaries.png" alt=""></p>
+
+<h2 id="so-how-do-we-proceed">
+<a class="anchor" href="#so-how-do-we-proceed" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>So How Do We Proceed?</strong>
+</h2>
+
+<h3 id="project-pipeline">
+<a class="anchor" href="#project-pipeline" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Project Pipeline:</strong><img src="/images/media-2/image1.png" style="width:6.30625in;height:3.09375in">
+</h3>
+
+<h3 id="data-collection-and-preprocessing">
+<a class="anchor" href="#data-collection-and-preprocessing" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Data Collection and Preprocessing</strong>
+</h3>
+
+<p>We began the project by collecting the data necessary for Chatbot and Sentiment Analysis shown on the dashboard. We used web scraping of reliable medical pages to collect the data of 6 diseases to be used as the knowledge base of the chatbot. For each of these files we had individual .csv files with 21 columns of data related to 2nd columns and the 6 diseases used in the first column of the table below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Covid</td>
+      <td>Symptoms (male, female, babies, common, old-people, critical-stage)</td>
+    </tr>
+    <tr>
+      <td>Diabetes</td>
+      <td>Treatment ( general, babies, old-people, critical-stage)</td>
+    </tr>
+    <tr>
+      <td>Respiratory Diseases</td>
+      <td>Medication (general, babies, old-people)</td>
+    </tr>
+    <tr>
+      <td>Heart Diseases</td>
+      <td>Facts or Myths</td>
+    </tr>
+    <tr>
+      <td>Dengue</td>
+      <td>Expenses</td>
+    </tr>
+    <tr>
+      <td>Diarrhoeal Diseases</td>
+      <td>Funding</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Survival Rate</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Diagnosis</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>FAQ</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Prevention</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>After extracting data for each 6 diseases in individual .csv files. We merge the CSV’s to make a single .csv where the diseases are arranged row-wise.</p>
+
+<p>This merged file has some redundancies to deal with, for that we did some preprocessing:</p>
+
+<ul>
+  <li>
+    <p>Removed the repeated columns which occurred after merging the CSV files of all the Diseases<strong>.</strong></p>
+  </li>
+  <li>
+    <p>Removed Unnecessary data in the Survival-Rate Column for better Data Visualization.</p>
+  </li>
+  <li>
+    <p>Removed the Unwanted Symbols from the Data.</p>
+  </li>
+  <li>
+    <p>Fixed Some Spelling Mistakes</p>
+  </li>
+  <li>
+    <p>Added an Extra Column “Condition” to Track the Disease</p>
+  </li>
+  <li>
+    <p>Converted long form of contents to short summaries for the better user experience.</p>
+  </li>
+  <li>
+    <p>Removed the points in each column which a user can’t understand..</p>
+  </li>
+</ul>
+
+<p>For the Patient experience, we used Twitter API to gather tweets collection (Libraries: sns, tweepy). Tweets collected :</p>
+
+<ul>
+  <li>
+    <p>63239 tweets (without class)</p>
+  </li>
+  <li>
+    <p>29706 tweets (with class)</p>
+  </li>
+</ul>
+
+<p>Keywords and Classes used for the extraction of these tweets describes as follows :</p>
+
+<p><img src="/images/media-2/image2.png" style="width:5.48983in;height:4.38633in"></p>
+
+<p>Collected Tweets needed a lot of cleaning. Conditions for cleaning are listed below :</p>
+
+<ul>
+  <li>
+    <p>Non English tweets: A lot of tweets were in languages other than english, since we are considering english as our primary language in the project we removed the non english tweets by using <em>SpaCy - lang_detect</em> function.</p>
+  </li>
+  <li>
+    <p>Hashtags, Mentions: We removed the hashtags and mentions by using the <em>regex</em> library. Many tweets are retweeted so in that case the mention might change but the text would remain the same. So, removing mentions helped us in dealing with retweets.</p>
+  </li>
+  <li>
+    <p>Retweets: Using the cleanTweets column in the dataframe shown below to drop duplicate texts to get only unique tweets</p>
+  </li>
+  <li>
+    <p>URLs: A lot of tweets contained URLs, as per our research most of them turned out to be a promotional tweet or advertisement rather than a patient experience. Thus we removed the URLs.</p>
+  </li>
+</ul>
+
+<p>The dataframe below shows a glimpse of the original tweets, cleaned tweets and their classes:</p>
+
+<p><img src="/images/media-2/image3.png" style="width:6.92188in;height:3.41667in"></p>
+
+<h3 id="nlp-sentiment-analysis">
+<a class="anchor" href="#nlp-sentiment-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>NLP SENTIMENT ANALYSIS:</strong>
+</h3>
+
+<ol>
+  <li>
+    <p>Sentiment Analysis is the process of determining the emotional tone behind a series of words, used to gain an understanding of the attitudes, opinions, and emotions expressed within an online mention.</p>
+  </li>
+  <li>
+    <p>Here, in our project, we tried to classify the tweets based on the patient’s experience with the overall process during the treatment, such as how did they feel while the treatment, were they scared, nervous, or pretty calm, was the hospital staff helpful, etc.</p>
+  </li>
+  <li>
+    <p>VADER was an excellent way to handle this problem because our data was unlabeled for sentiments. Additionally, the fact that it also deals with preprocessing, acronyms, and emoticons, which may give more insight into properly classifying the data, was a plus.</p>
+  </li>
+  <li>
+    <p>VADER (Valence Aware Dictionary and Sentiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media.</p>
+  </li>
+  <li>
+    <p>A sentiment lexicon is a list of lexical features (e.g: words) which are generally labeled according to their semantic orientation as either positive, negative, or neutral. It not only tells about the sentiment score but also tells us about how positive, negative, or neutral a sentiment is.</p>
+  </li>
+</ol>
+
+<p><strong>Steps Performed:</strong></p>
+
+<ol>
+  <li>
+    <p>Active Learning For Labeling The Data As “Relevant” Or “Irrelevant”</p>
+
+    <ol>
+      <li>
+        <p>Manual Annotation of 14k tweets</p>
+      </li>
+      <li>
+        <p>Use of Active learning for text classification into relevant (patient experience) &amp; irrelevant tweets</p>
+      </li>
+      <li>
+        <p>Libraries: Small-text using Transformer as a classifier</p>
+      </li>
+      <li>
+        <p>HuggingFace</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p><img src="/images/media-2/image4.png" style="width:4.46771in;height:2.77341in"></p>
+
+<p><strong>Fig. : Active Learning Graph</strong></p>
+
+<ol>
+  <li>
+    <p>Filtering The Data To Make The Corpus Customized To The Project Idea</p>
+
+    <ol>
+      <li>
+        <p>The following was the distribution of tweets in the corpus of 62273 tweets</p>
+
+        <ul>
+          <li>
+            <p>Relevant - 23001</p>
+          </li>
+          <li>
+            <p>Irrelevant – 39272</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>The irrelevant tweets were those containing any ads/promotions, government schemes or fundraisers, which were later dropped.</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p><img src="/images/media-2/image5.png" style="width:4.32604in;height:2.36689in"></p>
+
+<p><strong>Fig. : Number of Relevant and Irrelevant Tweets</strong></p>
+
+<ol>
+  <li>
+    <p>Perform Sentiment Analysis For 3 Sentiments Using Vader</p>
+
+    <ol>
+      <li>
+        <p>We used VADER to perform Sentiment Analysis.</p>
+      </li>
+      <li>
+        <p>The data was classified into 3 sentiments namely:</p>
+
+        <ul>
+          <li>
+            <p>Positive</p>
+          </li>
+          <li>
+            <p>Negative</p>
+          </li>
+          <li>
+            <p>Neutral</p>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p><img src="/images/media-2/image6.png" style="width:3.91407in;height:2.66016in"></p>
+
+<p><strong>Fig. : Number of tweets classified for each sentiment</strong></p>
+
+<ol>
+  <li>
+    <p>Visualization using Python</p>
+
+    <ol>
+      <li>
+        <p>Word Clouds:</p>
+
+        <ul>
+          <li>
+            <p>Word Cloud is a data visualization technique used for representing text data in which the size of each word indicates its frequency or importance. In simpler terms, a ‘word cloud’ is a visual representation of word frequency.</p>
+          </li>
+          <li>
+            <p>Word clouds are increasingly being employed as a simple tool to identify the focus of written material. They are widely used for analyzing data from social network websites.</p>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p><img src="/images/media-2/image7.png" style="width:2.11237in;height:2.11237in">
+<img src="/images/media-2/image8.png" style="width:2.09896in;height:2.09896in">
+<img src="/images/media-2/image9.png" style="width:2.08854in;height:2.08854in"></p>
+
+<p><strong>Fig. : Word Cloud for each Sentiments</strong></p>
+
+<h3 id="data-visualization-and-dashboarding">
+<a class="anchor" href="#data-visualization-and-dashboarding" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Data visualization and Dashboarding:</strong>
+</h3>
+
+<p><strong>Data</strong> <strong>visualization</strong>, which was once a relatively obscure field, has now become ubiquitous in the fields of business intelligence and data journalism. There are numerous methods for effectively and beautifully presenting insights, as well as a plethora of blogs dedicated to creating and analyzing visualizations. Dashboards are what we utilized to represent data in a variety of ways.</p>
+
+<p><strong>1. Storytelling with Data:</strong> Data visualization exists, in large part, to help create a compelling narrative. In the Health Dashboard, we are trying to show the level of data based on the Disease Conditions. Simultaneously, data talks about Sentiment Analysis that is extracted from tweets data.</p>
+
+<p><strong>2. Information is Beautiful:</strong> Rather than limiting data to mundane functionality, we can take advantage of the opportunity to showcase innovative data visualization projects. To drill down into the data, the health dashboard makes use of GIF images, Tabular, Filters, Actions, and Word Cloud. In Addition, the Sentiment Analysis Dashboard uses Word Cloud, Bar Charts, Dual Axis Charts and Filter Actions.</p>
+
+<p><strong>3. Visualizing Data:</strong> Users can visualize the symptoms, diagnosis, treatment, expenses, and FAQ’s in the Health Conditions Dashboard based on the disease they had chosen. It was developed to help patients and their families understand and learn more about the diseases and data used by our chatbot. Furthermore, the Sentiment Analysis Dashboard is intended to help doctors and medical administrators gain a better understanding of the experiences of patients and the general public when they visit hospitals.</p>
+
+<p><strong>4. Glimpse of the Dashboard:</strong></p>
+
+<p><img src="/images/media-2/image10.gif" style="width:8.16316in;height:6.29523in"></p>
+
+<p>Link to the dashboard: <a href="https://public.tableau.com/app/profile/sudhakar.reddy7432/viz/HealthBot/Health?publish=yes"><strong><u>HealthBot \| Tableau Public</u></strong></a> and <a href="https://www.youtube.com/watch?v=JFwGIzCduIE"><strong><u>Dashboard Demonstration Video</u></strong></a></p>
+
+<p><strong>5. About the Dashboard:</strong></p>
+
+<ul>
+  <li>
+    <p>Visualizes data specific to Indian demographics.</p>
+  </li>
+  <li>
+    <p>Gives an Insight into a particular disease by showcasing its attributes.</p>
+  </li>
+  <li>
+    <p>Highly scalable and Easily Updatable.</p>
+  </li>
+</ul>
+
+<p>The Health Conditions Dashboard: <strong>“An Overview of the Disease data used by our MediBot”</strong>: 
+It helps to give an insight to the users namely patients, family members of the admitted patients and the healthcare management about the data used by our Chatbot.</p>
+
+<p>The Sentiment Analysis Dashboard: <strong>“To Gauge the patients experiences at Hospitals”</strong>: 
+It helps to give an insight into patient’s experiences with the help of sentiment analysis performed on tweets filtered according to relevancy of patient’s experiences and these 6 classes which are as follows :</p>
+
+<ul>
+  <li>
+    <p>Common Procedures</p>
+  </li>
+  <li>
+    <p>Emergency Care</p>
+  </li>
+  <li>
+    <p>Hospital Staff</p>
+  </li>
+  <li>
+    <p>Medical Facility</p>
+  </li>
+  <li>
+    <p>Treatment</p>
+  </li>
+  <li>
+    <p>Null</p>
+  </li>
+</ul>
+
+<p>In the Sentiment Analysis Dashboard, the sentiment analysis is performed on the dataset built after filtering relevant twitter tweets and then on the basis of it’s sentiment, each tweet is classified into three categories namely :</p>
+
+<ul>
+  <li>
+    <p>Neutral</p>
+  </li>
+  <li>
+    <p>Positive</p>
+  </li>
+  <li>
+    <p>Negative</p>
+  </li>
+</ul>
+
+<p><strong>6. Data Used in Dashboard Building:</strong></p>
+
+<ul>
+  <li>
+    <p>For the Creation of Health Conditions Dashboard we utilized the Health-Conditions.csv</p>
+  </li>
+  <li>
+    <p>For the Creation of Sentiment Analysis Dashboard we utilized two files namely : Sentiment-Analysis.csv and the cleaned_tweets_v1.txt</p>
+  </li>
+</ul>
+
+<p><strong>7</strong>. <strong>Tools Used:</strong></p>
+
+<ul>
+  <li>
+    <p>Tableau was used as a dashboarding tool for this project.</p>
+  </li>
+  <li>
+    <p>To represent the data in a meaningful way, we created various worksheets, a dashboard and a story.</p>
+  </li>
+  <li>
+    <p>We Used GIF images to represent the Health Conditions and Sentiments .</p>
+  </li>
+  <li>
+    <p>We also utilized different chart models(Bar Graph, Tabular formats, Dual Axis Charts, Word Cloud, Action Filters to represent the data in an understandable format).</p>
+  </li>
+</ul>
+
+<h2 id="chatbot-modelling-rasa-framework">
+<a class="anchor" href="#chatbot-modelling-rasa-framework" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Chatbot Modelling Rasa FrameWork:</strong>
+</h2>
+
+<p>We chose RASA to build our chatbot for its versatility and its functionality. <a href="https://rasa.com/"><u>Rasa</u></a> is an open source AI conversational chatbot building tool, it is regularly updated by a huge community of developers and users. Another reason for choosing this modeling tool was to consider the future scalability for practical healthcare application.</p>
+
+<h3 id="now-how-does-rasa-work">
+<a class="anchor" href="#now-how-does-rasa-work" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Now, how does Rasa work?</strong>
+</h3>
+
+<p><img src="/images/media-2/image11.png" style="width:6.83333in;height:3.06771in"></p>
+
+<p>If you did not get a hold of the above image, do not worry, we will take a simple route to understand it. We can say the Rasa structure is divided into three <em>main</em> files - intents.yml, stories.yml and domain.yml.</p>
+
+<ul>
+  <li>
+    <p><a href="https://rasa.com/docs/rasa/next/domain/#intents"><strong><u>Intents</u></strong></a> are nothing but examples of user inputs that are hard coded (mostly) so that RASA is trained and is expected to have such messages from the users. A simple intent message could be “Hi”. <a href="https://rasa.com/docs/rasa/next/domain/#entities"><strong><u>Entities</u></strong></a> are collected from the user’s input message and they are stored to be used in the conversation later by the chatbot. For example, when a user mentions a disease name, say Covid, it will capture that name as an entity of ‘disease’ and store it in <a href="https://rasa.com/docs/rasa/next/domain/#slots"><strong><u>slots</u></strong></a> (Rasa slots or storage box) so that name can be used to fetch data or used in the conversational flow.</p>
+  </li>
+  <li>
+    <p><a href="https://rasa.com/docs/rasa/next/stories"><strong><u>Stories</u></strong></a> contain a generalized conversational flow between the user and the chatbot. There could be many possibilities of the chat conversation but it can be limited as well as can be made complex by developing stories. Depending on the user’s input message, a story can be triggered to respond to the user’s query. In this project, we have used multiple stories that define a flow of conversation based on whether the user would want to know about Symptoms, Cure, Medication or Expenses related to a particular disease. We have also included Greet and Goodbye sections to make the user feel at home.</p>
+  </li>
+  <li>
+    <p><a href="https://rasa.com/docs/rasa/next/domain"><strong><u>domain</u></strong></a>.yml an overseer of this process. It stores all the data of entities, slots, stories, user responses, actions, and even forms which are not used in this project since we are not collecting any user data.</p>
+  </li>
+</ul>
+
+<p><img src="/images/media-2/image12.png" style="width:6.78125in;height:3.28646in"></p>
+
+<h3 id="deployment">
+<a class="anchor" href="#deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Deployment:</strong>
+</h3>
+
+<p>Till now, we have been developing our chatbot locally. But to get to the next stage of development, we need to deploy our assistant and share it with the world. The Rasa stack runs on-premise or on your own cloud account, which means you have choices when it comes to deploying your assistant. The deployment strategy you choose depends on a range of factors : the amount of complexity you want to take on as a developer, hardware constraints and the traffic you expect your assistant to receive. Let’s see some of the method we explored for <a href="https://rasa.com/blog/the-complete-guide-to-deploying-your-rasa-assistant/"><u>deployment</u></a> :</p>
+
+<ol>
+  <li>Using ngrok:
+    <blockquote>
+      <p>ngrok is a cross-platform application that exposes local server ports to the internet. It offers various advantages as it is easy to use, fast, supports UTP and HTTPS, and also it can be used free.</p>
+    </blockquote>
+  </li>
+  <li>Using Heroku and Docker Compose:
+    <blockquote>
+      <p>Heroku is a container-based cloud Platform as a Service(PaaS). Its popularity has always hinged on its simplicity, elegance, and usability. Docker Compose is a tool for running multi-container applications on a single host machine. The docker-compose.yml file describes how your application’s containers and services should be configured. Docker Compose networks the containers together, allowing the services to reach each other and making it possible to start or stop all containers with a single command.
+<img src="/images/media-2/image13.png" alt="">
+<strong>The above fig. shows the deployment process of chatbot using ngrok on Telegram channel.</strong>
+<img src="/images/media-2/image14.png" alt="">
+<strong>The above fig. shows the deployment process of chatbot using Heroku &amp; Docker Compose on Telegram channel.</strong></p>
+    </blockquote>
+  </li>
+</ol>
+
+<!-- <img src="/images/media-2/image13.png" style="width:6.20833in;height:2.62562in" /> -->
+<!--  **The above fig. shows the deployment process of chatbot using ngrok on Telegram channel.** -->
+<!-- ![](/images/media-2/image14.png) -->
+<!-- <img src="/images/media-2/image14.png" style="width:5.51563in;height:3.10254in" />
+ **The above fig. shows the deployment process of chatbot using Heroku & Docker Compose on Telegram channel.** -->
+
+<h3 id="glimpse-of-the-working-medibot---an-ai-chabot-at-your-disposal-to-answer-your-key-medical-questions-quicker">
+<a class="anchor" href="#glimpse-of-the-working-medibot---an-ai-chabot-at-your-disposal-to-answer-your-key-medical-questions-quicker" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Glimpse of the Working MediBot - “An AI chabot at your disposal to answer your key medical questions Quicker!”</strong>
+</h3>
+
+<!-- <img src="/images/media-2/image15.gif" style="width:6.57292in;height:3.53524in" /> -->
+
+<p>Scenario1: Initial conversation
+<img src="/images/media-2/Initial-Convo.gif" alt=""></p>
+
+<p>Scenario2: Conversation pertaining to a health related query
+<img src="/images/media-2/Convo-hrquery.gif" alt=""></p>
+
+<p>Scenario3: Preventative measures and Expenses
+<img src="/images/media-2/Preventive.gif" alt=""></p>
+
+<h2 id="conclusion">
+<a class="anchor" href="#conclusion" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Conclusion:</strong>
+</h2>
+
+<p>When the three major outcomes of these projects are implemented at full scale, we could see following benefits:</p>
+
+<ol>
+  <li>
+    <p>The chatbot will help users to get the medical/health related information at their fingertips. They don’t need to wait for the doctors or experts from the health field for the answers to general questions.</p>
+  </li>
+  <li>
+    <p>Additionally, the dashboard will help the users to visualize the health and disease related data utilized by our chatbot in real time. It will also help answer questions related to the chatbot reasoning and will also provide better feedback on patient’s or users behavior to doctors and hospital administration.</p>
+  </li>
+  <li>
+    <p>The sentiment analysis provides us with insights on how user’s emotions are classified as positive, negative or neutral. This will help us determine the level of stress, anxiety and nervousness among patients/users and we will eventually help to reduce it by the first two points discussed above.</p>
+  </li>
+</ol>
+
+<h2 id="future-scope">
+<a class="anchor" href="#future-scope" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Future Scope:</strong>
+</h2>
+
+<p><img src="/images/media-2/future-scope.png" alt=""></p>
+
+<ol>
+  <li>
+    <p>Improving the rasa chatbot by training it on more data, incorporating improved NLU to make it more robust.</p>
+  </li>
+  <li>
+    <p>Incorporate sentiment analysis into the chatbot to respond to patient enquiries based on the sentiment of the preceding remark or query.</p>
+  </li>
+  <li>
+    <p>Adding more databases of diseases and its related attributes to expand the dataset used by the chatbot will help make the chatbot more generalizable in a clinical setting.</p>
+  </li>
+  <li>
+    <p>Improving the dashboard by implementing Age based filters using actions that will change the attributes of the health conditions dynamically according to the age filter selected and will showcase some and hide other features at the time of selection.</p>
+  </li>
+</ol>
+
+<h2 id="production-roadmap">
+<a class="anchor" href="#production-roadmap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Production Roadmap</h2>
+
+<p><img src="/images/media-2/production-roadmap.png" alt=""></p>
+
+<h2 id="business-scope-and-business-model">
+<a class="anchor" href="#business-scope-and-business-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Business Scope and Business Model</h2>
+
+<p><img src="/images/media-2/business.png" alt=""></p>
+
+<h2 id="members-involved-in-the-project">
+<a class="anchor" href="#members-involved-in-the-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Members Involved in the Project:</h2>
+
+<p>Team Members:  <a href="https://www.linkedin.com/in/priyank7n/"><u>Priyank Negi</u></a>, <a href="https://www.linkedin.com/in/bharati-panigrahi-10a9461a0/"><u>Bharati Panigrahi</u></a>, <a href="https://www.linkedin.com/in/hardik-seju/"><u>Hardik Seju</u></a>, <a href="https://www.linkedin.com/in/tsudhakarreddy/"><u>Sudhakar Reddy</u></a>, <a href="https://www.linkedin.com/in/rajat-aayush-jha-4596b616b/"><u>Rajat Aayush Jha</u></a>, <a href="https://www.linkedin.com/in/esha-priyadarshi-485b5b169/"><u>Esha Priyadarshi</u></a></p>
+
+<h2 id="references">
+<a class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>References:</strong>
+</h2>
+
+<ol>
+  <li>
+    <p><a href="https://my.clevelandclinic.org/health/articles/4022-upper-respiratory-infection"><u>Upper Respiratory Infection: Symptoms, Contagious, Treatment</u></a></p>
+  </li>
+  <li>
+    <p><a href="https://www.cdc.gov/heartdisease/about.htm"><u>About Heart Disease \| cdc.gov</u></a></p>
+  </li>
+  <li>
+    <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/index.html"><u>Your Health \| COVID-19 \| CDC</u></a></p>
+  </li>
+  <li>
+    <p><a href="https://my.clevelandclinic.org/health/articles/12176-diabetes-skin-conditions"><u>Diabetes Rash: Causes, Appearance and Prevention</u></a></p>
+  </li>
+  <li>
+    <p><a href="https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444"><u>Diabetes - Symptoms and causes - Mayo Clinic</u></a></p>
+  </li>
+  <li>
+    <p><a href="https://my.clevelandclinic.org/health/articles/4022-upper-respiratory-infection"><u>Upper Respiratory Infection: Symptoms, Contagious, Treatment</u></a></p>
+  </li>
+  <li>
+    <p><a href="https://vikaspedia.in/health/diseases/heart-diseases/faqs-on-heart-health"><u>FAQs on Heart Health — Vikaspedia</u></a></p>
+  </li>
+  <li>
+    <p><a href="https://www.healthline.com/health/acute-upper-respiratory-infection#prevention"><u>Acute Upper Respiratory Infection</u></a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/botfront/rasa-webchat"><u>GitHub - botfront/rasa-webchat: A feature-rich chat widget for Rasa and Botfront</u></a></p>
+  </li>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=jEgVto5QME8&amp;t=1s"><u>Tableau for Beginners</u></a></p>
+  </li>
+  <li>
+    <p><a href="https://www.simplilearn.com/tutorials/tableau-tutorial?source=sl_frs_nav_playlist_video_clicked"><u>Tableau TutorialSimplilearn</u></a></p>
+  </li>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=jEgVto5QME8&amp;t=1s"><u>Tableau for Beginners</u></a></p>
+  </li>
+  <li>
+    <p><a href="https://data-flair.training/blogs/tableau-tutorial/"><u>Tableau Tutorial Dataflair Trainings</u></a>)</p>
+  </li>
+  <li>
+    <p><a href="https://public.tableau.com/app/discover"><u>Tableau Visualization Ideas Brainstorming</u></a></p>
+  </li>
+</ol>
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="PriyanK7n/PriyanK7n.github.io"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/nlp/dashboard/sentiment%20analysis/healthcare/chatbot/medibot/omdena/2022/06/09/Medi-Bot.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>This is a place for Priyank to display his projects and talk about stuff and ideas he&#39;s interested in and looking forward to 2022.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/PriyanK7n" target="_blank" title="PriyanK7n"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/PriyanK_7n" target="_blank" title="PriyanK_7n"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
