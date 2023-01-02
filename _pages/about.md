@@ -15,8 +15,8 @@ I am also a big believer in the importance of Data Ethics in developing excellen
 
 **My Resume is Listed here, Please click on this hyper link below to get redirected to my Resume:** 
 
-[Click here to get redirected to Priyank's Resume](https://drive.google.com/file/d/1EG8YdqpufmEIC53URbasTdptLIfKtxXR/view?usp=sharing)
+[Click here to get redirected to Priyank's Resume](https://drive.google.com/file/d/12anjPGUD0aOe6b-NCYrlWGVpRT5iLoRx/view?usp=sharing)
 
 **Also If you want to reach out!, Please reach out to me on [LinkedIn!](https://www.linkedin.com/in/priyank-negi-707019195)**
 
-![]({{site.baseurl}}/images/nanital-lake-view.jpeg “A lakeside picture of the Beautiful city of Nanital”)
+![nanital-lake-view](https://user-images.githubusercontent.com/44031169/210272362-e9b24d89-5454-4307-af1f-e52d09c6487d.jpeg)
