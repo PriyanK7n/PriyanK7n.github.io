@@ -13,24 +13,24 @@ search_exclude: true
 
 ---
 
-
 ## **INTRODUCTION**
 
 ### Types of Recommendations:-
 
 **Content-based recommendation**:
-
 ![](images/media-3/intro-1.png)
+
 * Since you liked item A, you'll get recommendations of items belonging to the group Item A belongs to.
 
 **User-based recommendation**:
 ![](images/media-2/intro-1.png)
+
 * Users similar to you liked this item.
 
 **Item-based recommendation**:
 ![](images/media-3/intro-2.png)
-* Since you liked item A, you might like item B.
 
+* Since you liked item A, you might like item B.
 
 ## **Dataset Used**
 
@@ -54,7 +54,6 @@ search_exclude: true
 ## **Methodology**
 
 ### **Data-Preprocessing to create Books-Users Ratings Sparse Matrix.**
-
 ![](images/media-3/Sparse-matrix.png)
 
 > * 97% sparse
@@ -74,8 +73,6 @@ search_exclude: true
 * https://en.wikipedia.org/wiki/Singular_value_decomposition
 * https://towardsdatascience.com/recommender-system-singular-valuedecomposition-svd-truncated-svd-97096338f361
 
-
-
 ## **Experiments:-**
 
 #### **Experiment 1:** Finding Best Filling Method for Dealing with Missing Values in Sparse Matrix
@@ -89,39 +86,36 @@ search_exclude: true
 
     2. Step 2:  Singular Value Decomposition (SVD): Perform SVD on the sparse matrix attained from Step 1 and get a low rank Approximation by using a fraction of the components (250, acquired through cross-validation) to reconstruct the User-Book Matrix
 
-    3. Step 3: Evaluate Results at every iteration Compare predicted reconstructed matrix & original matrix using RMSE, MSE, MAE, Pearson Coefficient, & Cosine Similarity
+    3. Step 3: Evaluate Results at every iteration Compare the predicted reconstructed matrix & original matrix using RMSE, MSE, MAE, Pearson Coefficient, & Cosine Similarity
 
-    4. Step 4: Replace with original values. Substitute the known non-zero values of the original sparse matrix into the output matrix and left the rest untouched.
+    4. Step 4: Replace with original values. Substitute the known non-zero values of the original sparse matrix into the output matrix and leave the rest untouched.
 
-    5. Go to Step 2 and repeat for 5 iterations.
-
+    5. Go to Step 2 and repeat for five iterations.
 
 #### **Experiment 2:** Increasing Sparsity
 
      1. Step 1:  **Increase Sparsity-** Set 300 random elements in the User-Book Sparse Matrix to zero
      2. Step 2: **Predict-** Perform SVD & use a fraction of components (250 components(acquired through Cross Validation)) on the final sparse matrix from the above step to get the reconstructed matrix.
-    3. Step 3: **Replace with original values-** Substitute the known elements of the original sparse matrix into output matrix, but leave the rest untouched. 
-    4. Step 4: **Evaluate Results** Compare prediction matrix & original matrix using RMSE, MSE, MAE, Pearson Coefficient, & Cosine Similarity
-
-    5. **Decreasing Sparsity Test-** Repeat all the steps 2, 3, 4, 5 by First Filling 300 unknown values with mean (column wise)
+     3. Step 3: **Replace with original values-** Substitute the known elements of the original sparse matrix into the output matrix, but leave the rest untouched. 
+     4. Step 4: **Evaluate Results** Compare the prediction matrix & original matrix using RMSE, MSE, MAE, Pearson Coefficient, & Cosine Similarity
+     5. **Decreasing Sparsity Test-** Repeat all the steps 2, 3, 4, 5 by First Filling 300 unknown values with mean (column-wise)
 
 #### **Experiment 3:** Artificial Dataset Creation:
 
     1. Create low-rank (250 components) reconstruction using SVD from Books-Users sparse matrix. (iterations=1)
     2. Add zero-mean gaussian random noise to every element. 
-    3. Round up to nearest integers in range 1-10. 
+    3. Round up to the nearest integers from 1-10. 
     4. Randomly drop 20% of rows & columns
-    5. **Inreasing the sparsity on artificial dataset-** Increase sparsity by 10% in every iteration (randomly setting elements to zero)
+    5. **Increasing the sparsity on the artificial dataset-** Increase sparsity by 10% in every iteration (randomly setting elements to zero)
     6. Perform SVD and evaluate the results. 
 
+### **Learnings**
 
-### **What we learned**
+   * As the user-item dataset matrix becomes sparser, the recommendations become less accurate
 
-* As the user-item dataset matrix becomes sparser, the recommendations become less accurate
+   * Different strategies to fill in unknown values in the user-item matrix
 
-* Different strategies to fill in unknown values in the user-item matrix
-
-* Iterative SVD algorithm for recommendation
+   * Iterative SVD algorithm for recommendation
 
 ## **References:**
 
