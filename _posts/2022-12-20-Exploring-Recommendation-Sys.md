@@ -51,9 +51,7 @@ search_exclude: true
 - num_of_components or top 'r' singular values =250
 - iterations=20
 
-## **Methodology**
-
-### **Data-Preprocessing to create Books-Users Ratings Sparse Matrix.**
+## **Data-Preprocessing to create Books-Users Ratings Sparse Matrix.**
 ![](images/media-3/Sparse-matrix.png)
 
 > * 97% sparse
@@ -64,14 +62,6 @@ search_exclude: true
 * Ensured the Books had at least 50 ratings from users
 * Fill Empty/NAN(Not a Number) values with zeros.
 * Remove duplicates(ensures unique users and books)
-
-
-## **References:**
-
-* https://github.com/iNeuron-Pvt-Ltd/Books-Recommender-System-Using-Machine-Learning
-* https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset
-* https://en.wikipedia.org/wiki/Singular_value_decomposition
-* https://towardsdatascience.com/recommender-system-singular-valuedecomposition-svd-truncated-svd-97096338f361
 
 ## **Experiments:-**
 
