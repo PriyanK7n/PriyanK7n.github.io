@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Exploration of Recommendation Systems | Priyank AI Blogs</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Exploration of Recommendation Systems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="BU’s EC 503 Class Project Submission." />
+<meta property="og:description" content="BU’s EC 503 Class Project Submission." />
+<link rel="canonical" href="https://priyank7n.me/svd/recommendation%20systems/sparsity%20variation/movie%20recommendation%20dataset/2022/12/16/Exploring-Recommendation-Systems.html" />
+<meta property="og:url" content="https://priyank7n.me/svd/recommendation%20systems/sparsity%20variation/movie%20recommendation%20dataset/2022/12/16/Exploring-Recommendation-Systems.html" />
+<meta property="og:site_name" content="Priyank AI Blogs" />
+<meta property="og:image" content="https://priyank7n.me/images/books.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-16T00:00:00-06:00" />
+<script type="application/ld+json">
+{"url":"https://priyank7n.me/svd/recommendation%20systems/sparsity%20variation/movie%20recommendation%20dataset/2022/12/16/Exploring-Recommendation-Systems.html","@type":"BlogPosting","headline":"Exploration of Recommendation Systems","dateModified":"2022-12-16T00:00:00-06:00","datePublished":"2022-12-16T00:00:00-06:00","image":"https://priyank7n.me/images/books.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://priyank7n.me/svd/recommendation%20systems/sparsity%20variation/movie%20recommendation%20dataset/2022/12/16/Exploring-Recommendation-Systems.html"},"description":"BU’s EC 503 Class Project Submission.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://priyank7n.me/feed.xml" title="Priyank AI Blogs" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Priyank AI Blogs</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/search/">Search</a><a class="page-link" href="/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Exploration of Recommendation Systems</h1><p class="page-description">BU's EC 503 Class Project Submission.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-16T00:00:00-06:00" itemprop="datePublished">
+        Dec 16, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/categories/#SVD">SVD</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#recommendation Systems">recommendation Systems</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#sparsity variation">sparsity variation</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#movie recommendation dataset">movie recommendation dataset</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#dataset-used">Dataset Used</a></li>
+<li class="toc-entry toc-h2"><a href="#tools-used">Tools Used</a></li>
+<li class="toc-entry toc-h2"><a href="#hyperparameters-used">Hyperparameters Used</a></li>
+<li class="toc-entry toc-h2"><a href="#data-preprocessing">Data-Preprocessing</a></li>
+<li class="toc-entry toc-h2"><a href="#experiments">Experiments</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#experiment-1-finding-best-filling-method-for-dealing-with-missing-values-in-sparse-matrix">Experiment 1: Finding Best Filling Method for Dealing with Missing Values in Sparse Matrix</a></li>
+<li class="toc-entry toc-h3"><a href="#experiment-2-increasing-sparsity">Experiment 2: Increasing Sparsity</a></li>
+<li class="toc-entry toc-h3"><a href="#experiment-3-artificial-dataset-creation">Experiment 3: Artificial Dataset Creation</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#results">Results</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#experiment-1-iterative-results-of-svd-recommender-prediction-algorithm-using-different-filling-methodsiterations-5">Experiment 1: Iterative Results of SVD Recommender Prediction Algorithm using Different Filling Methods(**Iterations =5**)</a></li>
+<li class="toc-entry toc-h3"><a href="#experiment-2-increasing--decreasing-sparsity-on-user-books-sparse-matrixiterations-20">Experiment 2: Increasing &amp; Decreasing Sparsity on User-Books Sparse Matrix(Iterations =20)</a></li>
+<li class="toc-entry toc-h3"><a href="#experiment-3-increasing-sparsity-on-artifical-dataset-in-range-0---90">Experiment 3: Increasing Sparsity on Artifical Dataset in Range 0% - 90%</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#what-we-learned">What we learned?</a></li>
+<li class="toc-entry toc-h2"><a href="#references">References :</a></li>
+</ul><h2 id="dataset-used">
+<a class="anchor" href="#dataset-used" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em>Dataset Used</em></strong>
+</h2>
+
+<p><img src="/images/media-4/image1.png" style="width:5.02669in;height:2.86102in"></p>
+
+<ul>
+  <li>
+    <p>Books Recommendation Dataset</p>
+  </li>
+  <li>
+    <p>Artificial Dataset</p>
+  </li>
+</ul>
+
+<h2 id="tools-used">
+<a class="anchor" href="#tools-used" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em>Tools Used</em></strong>
+</h2>
+
+<ul>
+  <li>
+    <p>Python Programming language to perform experiments.</p>
+  </li>
+  <li>
+    <p>Used Sklearn for Modelling SVD.</p>
+  </li>
+  <li>
+    <p>Used Gridsearch for performing hyperparameter tuning.</p>
+  </li>
+  <li>
+    <p>Used matplotlib library to build various plots to analyze and showcase the results of experiments.</p>
+  </li>
+  <li>
+    <p>Pandas and Numpy to perform data-preprocessing</p>
+  </li>
+</ul>
+
+<h2 id="hyperparameters-used">
+<a class="anchor" href="#hyperparameters-used" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em>Hyperparameters Used</em></strong>
+</h2>
+
+<ul>
+  <li>
+    <p>Training and Testing Split: 80%, 20%</p>
+  </li>
+  <li>
+    <p>num_of_components or top ‘r’ singular values =250</p>
+  </li>
+  <li>
+    <p>iterations=20</p>
+  </li>
+</ul>
+
+<h2 id="data-preprocessing">
+<a class="anchor" href="#data-preprocessing" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em>Data-Preprocessing</em></strong>
+</h2>
+
+<p><img src="/images/media-4/image2.png" style="width:6.18947in;height:3.39876in"></p>
+
+<blockquote>
+  <ul>
+    <li>Dataset is 97% sparse.</li>
+    <li>Ratings: (1-10)</li>
+    <li>Final Shape (500, 551) –&gt; (Users, Books) Rating Matrix</li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li>
+    <p>Ensured the Users have at least rated more than 300 books</p>
+  </li>
+  <li>
+    <p>Ensured the Books had at least 50 ratings from users</p>
+  </li>
+  <li>
+    <p>Fill Empty/NAN(Not a Number) values with zeros.</p>
+  </li>
+  <li>
+    <p>Remove duplicates(ensures unique users and books)</p>
+  </li>
+</ul>
+
+<h2 id="experiments">
+<a class="anchor" href="#experiments" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em>Experiments</em></strong>
+</h2>
+
+<h3 id="experiment-1-finding-best-filling-method-for-dealing-with-missing-values-in-sparse-matrix">
+<a class="anchor" href="#experiment-1-finding-best-filling-method-for-dealing-with-missing-values-in-sparse-matrix" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em><u>Experiment 1</u>: Finding Best Filling Method for Dealing with Missing Values in Sparse Matrix</em></strong>
+</h3>
+
+<p>1. Step 1: <strong>Create the User-Book Sparse matrix</strong> : Fill unknowns with:</p>
+
+<ul>
+  <li>
+    <p>zeroes</p>
+  </li>
+  <li>
+    <p>column mean per user</p>
+  </li>
+  <li>
+    <p>row mean per book</p>
+  </li>
+  <li>
+    <p>column median per user</p>
+  </li>
+  <li>
+    <p>row median per book</p>
+  </li>
+</ul>
+
+<p>2. Step 2: <strong>Singular Value Decomposition (SVD):</strong> Perform SVD on the sparse matrix attained from Step 1 and get a low rank Approximation by using a fraction of the components (250, acquired through cross-validation) to reconstruct the User-Book Matrix</p>
+
+<p>3. Step 3<strong>: Evaluate Results</strong> at every iteration Compare predicted reconstructed matrix &amp; original matrix using RMSE, MSE, MAE, Pearson Coefficient, &amp; Cosine Similarity</p>
+
+<p>4. Step 4: <strong>Replace with original values :</strong> Substitute the known non-zero values of the original sparse matrix into the output matrix and left the rest untouched.</p>
+
+<p>5. Go to Step 2 and repeat for 5 iterations.</p>
+
+<h3 id="experiment-2-increasing-sparsity">
+<a class="anchor" href="#experiment-2-increasing-sparsity" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em><u>Experiment 2</u>: Increasing Sparsity</em></strong>
+</h3>
+
+<p>1. Step 1: <strong>Increase Sparsity-</strong> Set 300 random elements in the User-Book Sparse Matrix to zero</p>
+
+<p>2. Step 2: <strong>Predict-</strong> Perform SVD &amp; use a fraction of components (250 components(acquired through Cross Validation)) on the final sparse matrix from the above step to get the reconstructed matrix.</p>
+
+<p>3. Step 3: <strong>Replace with original values-</strong> Substitute the known elements of the original sparse matrix into output matrix, but leave the rest untouched.</p>
+
+<p>4. Step 4: <strong>Evaluate Results-</strong> Compare prediction matrix &amp; original matrix using RMSE, MSE, MAE, Pearson Coefficient, &amp; Cosine Similarity</p>
+
+<p>5. <strong>Decreasing Sparsity Test</strong>- Repeat all the steps 2, 3, 4, 5 by First Filling 300 unknown values with mean (column wise)</p>
+
+<h3 id="experiment-3-artificial-dataset-creation">
+<a class="anchor" href="#experiment-3-artificial-dataset-creation" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em><u>Experiment 3</u>: Artificial Dataset Creation</em></strong>
+</h3>
+
+<p>1. Create low-rank (250 components) reconstruction using SVD from Books-Users sparse matrix. (iterations=1)</p>
+
+<p>2. Add zero-mean gaussian random noise to every element.</p>
+
+<p>3. Round up to nearest integers in range 1-10.</p>
+
+<p>4. Randomly drop 20% of rows &amp; columns.</p>
+
+<p>5. <strong>Increasing the sparsity on artificial dataset-</strong> Increase sparsity by 10% in every iteration (randomly setting elements to zero)</p>
+
+<p>6. Perform SVD and evaluate the results.</p>
+
+<p><strong><em><u>Algorithim Used :</u></em></strong></p>
+
+<p><img src="/images/media-4/image3.png" style="width:5.63248in;height:3.17837in"></p>
+
+<h2 id="results">
+<a class="anchor" href="#results" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em>Results</em></strong>
+</h2>
+<h3 id="experiment-1-iterative-results-of-svd-recommender-prediction-algorithm-using-different-filling-methodsiterations-5">
+<a class="anchor" href="#experiment-1-iterative-results-of-svd-recommender-prediction-algorithm-using-different-filling-methodsiterations-5" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em><u>Experiment 1:</u> Iterative Results of SVD Recommender Prediction Algorithm using Different Filling Methods(**Iterations =5**)</em></strong>
+</h3>
+
+<p><img src="/images/media-4/image4.png" style="width:3.0625in;height:3.09202in"></p>
+
+<p><img src="/images/media-4/image5.png" style="width:3.08694in;height:3.1167in"></p>
+
+<h3 id="experiment-2-increasing--decreasing-sparsity-on-user-books-sparse-matrixiterations-20">
+<a class="anchor" href="#experiment-2-increasing--decreasing-sparsity-on-user-books-sparse-matrixiterations-20" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em><u>Experiment 2:</u> Increasing &amp; Decreasing Sparsity on User-Books Sparse Matrix(Iterations =20)</em></strong>
+</h3>
+
+<p><img src="/images/media-4/image6.png" style="width:3.59792in;height:3.41875in"></p>
+
+<p><img src="/images/media-4/image7.png" style="width:3.17847in;height:3.41875in"></p>
+
+<h3 id="experiment-3-increasing-sparsity-on-artifical-dataset-in-range-0---90">
+<a class="anchor" href="#experiment-3-increasing-sparsity-on-artifical-dataset-in-range-0---90" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em><u>Experiment 3</u>: Increasing Sparsity on Artifical Dataset in Range 0% - 90%</em></strong>
+</h3>
+
+<p><img src="/images/media-4/image8.png" style="width:3.45903in;height:3.48403in"></p>
+
+<p><img src="/images/media-4/image9.png" style="width:3.61042in;height:3.63681in"></p>
+
+<h2 id="what-we-learned">
+<a class="anchor" href="#what-we-learned" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em>What we learned?</em></strong>
+</h2>
+
+<ul>
+  <li>
+    <p>As the user-item dataset matrix becomes sparser, the recommendations become less accurate</p>
+  </li>
+  <li>
+    <p>Different strategies to fill in unknown values in the user-item matrix</p>
+  </li>
+  <li>
+    <p>Iterative SVD algorithm for recommendation</p>
+  </li>
+</ul>
+
+<h2 id="references">
+<a class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong><em>References :</em></strong>
+</h2>
+
+<p>1. <a href="https://towardsdatascience.com/various-implementations-of-collaborative-filtering-100385c6dfe0">Various Implementations of Collaborative Filtering.</a></p>
+
+<p>2. <a href="https://d4datascience.com/category/predictive-analytics/">Predictive Analytics</a></p>
+
+<p>3. <a href="https://en.wikipedia.org/wiki/Singular_value_decomposition">SVD</a></p>
+
+<p>4. <a href="https://towardsdatascience.com/recommender-system-singular-value-decomposition-svd-truncated-svd-97096338f361#:~:text=Singular%20value%20decomposition%20(SVD)%20is%20a%20collaborative%20filtering%20method%20for,factor%20model%20for%20matrix%20factorization.">Truncated SVD</a></p>
+
+<p>5. <a href="https://github.com/iNeuron-Pvt-Ltd/Books-Recommender-System-Using-Machine-Learning">Books Recommender Systems Using ML</a></p>
+
+<p>6. <a href="https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset">Book Recommendation Dataset</a></p>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="PriyanK7n/PriyanK7n.github.io"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/svd/recommendation%20systems/sparsity%20variation/movie%20recommendation%20dataset/2022/12/16/Exploring-Recommendation-Systems.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>This is a place for Priyank to display his projects and talk about stuff and ideas he&#39;s interested in and looking forward to 2022.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/PriyanK7n" target="_blank" title="PriyanK7n"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/PriyanK_7n" target="_blank" title="PriyanK_7n"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
